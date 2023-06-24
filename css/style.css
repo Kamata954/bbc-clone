@@ -1,0 +1,306 @@
+/* Box Model Hack */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16;
+}
+/* Clear fix hack */
+  .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html,body {
+  height: 100%;
+  font-family: 'BBC Reith Sans',  Arial, Helvetica, freesans, sans-serif;
+}
+
+.test {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*HEADER*/
+
+header {
+  height: 4%;
+  width: 100%;
+  /**border: solid 2px red;**/
+  font: Arial, Helvetica, freesans, sans-serif;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  /**border: solid 2px yellow;**/
+  color: white;
+  font-size: .8rem;
+  font-weight: 600;
+  background-color: black;
+}
+
+.menu {
+  display: inline-block;
+  
+}
+
+.logo {
+  width: 8%;
+  height: 100%;
+  background-image: url("https://i.imgur.com/QDdu17Z.jpeg");
+  background-size: cover;
+  float: left;
+  /**border: solid 2px rebeccapurple;**/
+}
+
+.center-menu {
+  height: 100%;
+  width: 60%;
+  float: left;
+  /**border: solid 2px olivedrab;**/
+  text-align: center;
+  
+}
+
+.search-bar {
+  height: 100%;
+  width: 15%;
+  float: right;
+  /**border: solid 2px black;**/
+}
+
+.sign-in {
+  width: 15%;
+  height: 100%;
+  padding-top: .4rem;
+  float: left;
+}
+
+nav li {
+  padding: 0 .5rem;
+  padding-top: .4rem;
+  border-right: solid 1px grey;
+  padding-bottom: 2%;
+}
+
+/*HERO*/
+
+.hero {
+  height: 45%;
+  width: 100%;
+}
+
+
+.hero-top {
+  height: 17%;
+  width: 100%;
+  padding: .5%;
+}
+
+.welcome {
+  display: inline-block;
+  float: left;
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.date {
+  float: right;
+  margin-top: 2%;
+  font-size: 1.1rem;
+  
+}
+
+.hero-main {
+  height: 83%;
+  width: 100%;
+}
+
+.headline {
+  height: 96%;
+  width: 49%;
+  background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(128,128,128,0) 32%, rgba(4,4,4,0.6419125416239755) 100%) , url("https://i.imgur.com/aDlfO68.jpeg");
+  color: white;
+  background-size: cover;
+  padding-top: 16%;
+  padding-left: 1%;
+  margin: .5%;
+  float: left;
+}
+
+
+.headline h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.headline p {
+  font-size: .8rem;
+  margin: 1.5% 0;
+}
+
+.headline span {
+  font-size: .70rem;
+  border-left: 2px solid red;
+  padding-left: 1%;
+}
+
+.sideline {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.sideline span {
+  font-size: .70rem;
+  border-left: 2px solid red;
+  padding-left: 1%;
+}
+
+.gal-1, .gal-2, .gal-3, .gal-4 {
+  height: 46%;
+  width: 48%;
+  color: white;
+  padding: 12% 1% 0 1%;
+  line-height: 1.1rem;
+  float: left;
+  margin: 1%;
+}
+
+.gal-1 {
+  background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(128,128,128,0) 32%, rgba(4,4,4,0.6419125416239755) 100%) , url("https://i.imgur.com/CbnvSZv.jpeg");
+  background-size: cover;
+
+}
+
+.gal-2 {
+  background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(128,128,128,0) 32%, rgba(4,4,4,0.6419125416239755) 100%) , url("https://i.imgur.com/eDvFgwL.jpeg");
+  background-size: cover;
+}
+
+.gal-3 {
+  background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(128,128,128,0) 32%, rgba(4,4,4,0.6419125416239755) 100%) , url("https://i.imgur.com/uyJRNIy.jpeg");
+  background-size: cover;
+  padding-top: 15%;
+}
+
+.gal-4 {
+  background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(128,128,128,0) 11%, rgba(4,4,4,0.6419125416239755) 100%) , url("https://i.imgur.com/lJ9ytlr.jpeg");
+  background-size: cover;
+}
+
+.gal-1 span {
+  border-left: solid 2px lightskyblue;
+}
+
+.gal-3 span {
+  border-left: solid 2px lightblue;
+
+}
+
+.gallery span {
+  padding-left: 2%;
+}
+
+/*OTHER*/
+
+.other {
+  height: 51%;
+  width: 100%;
+}
+
+.other-top {
+  height: 20%;
+  width: 100%;
+  padding: .5%;
+}
+
+.news {
+  border-left: solid 4px red ;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: .5%;
+  margin-top: 3%;
+}
+
+.other-main {
+  height: 80%;
+  width: 100%;
+}
+
+.widgets {
+  height: 100%;
+  width: 33.33%;
+  float: left;
+  padding: .5%;
+}
+
+.widget-gal {
+  height: 60%;
+  width: 100%;
+}
+
+.wid-gal-1 {
+  background-image: url("https://i.imgur.com/ldgffh0.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wid-gal-2 {
+  background-image: url("https://i.imgur.com/iGAfD1C.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wid-gal-3 {
+  background-image: url("https://i.imgur.com/gprKdYk.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.widget-news {
+  height: 40%;
+  width: 100%;
+  padding-top: 1%;
+}
+
+.widget-news h3 {
+  font-weight: bold;
+}
+
+.widget-news p {
+  font-size: .8rem;
+  margin: 2% 0 3% 0;
+}
+
+.widget-news span {
+  font-size: .75rem;
+  border-left: 2px solid red;
+  padding-left: 1%;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
